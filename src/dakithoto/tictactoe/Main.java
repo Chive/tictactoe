@@ -1,5 +1,5 @@
 package dakithoto.tictactoe;
 
-public class TestClass {
+public class Main {
 
 }
