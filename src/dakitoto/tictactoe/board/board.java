@@ -19,4 +19,29 @@ public class board {
 		}
 	}
 	
+	public boolean checkPlayerWin(int player){ // 1= erster Spieler  2= 2. oder ComputerSpieler
+		
+		if(board[6]==player && board[7]==player && board[8]==player){return true;}
+		if(board[3]==player && board[4]==player && board[5]==player){return true;}
+		if(board[0]==player && board[1]==player && board[2]==player){return true;}
+		
+		if(board[6]==player && board[3]==player && board[0]==player){return true;}
+		if(board[7]==player && board[4]==player && board[1]==player){return true;}
+		if(board[8]==player && board[5]==player && board[2]==player){return true;}
+		
+		if(board[6]==player && board[4]==player && board[2]==player){return true;}
+		if(board[0]==player && board[4]==player && board[8]==player){return true;}
+		
+		return false;
+	}
+	
+	
 }
+
+/*
+
+6 7 8
+3 4 5
+0 1 2
+
+*/
