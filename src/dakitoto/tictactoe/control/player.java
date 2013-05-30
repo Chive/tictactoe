@@ -38,5 +38,12 @@ public class player {
 		}
 			
 	}
+
+	public int nextTurn() {
+		if(board.checkPlayerWin(1)){return 1;}
+		if(board.checkPlayerWin(2)){return 2;}
+		return 0;
+		
+	}
 	
 }
