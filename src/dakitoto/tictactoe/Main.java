@@ -21,9 +21,19 @@ public class Main {
 		int winningPlayer=0;
 		while ((winningPlayer=player.nextTurn())==0){
 			
+			System.out.println("----------------------");
 			
+			System.out.println("|--"+board.valueAt(6)+"---|---"+board.valueAt(7)+"---|--"+board.valueAt(8)+"--|");
 			
+			System.out.println("|------|-------|-----|");
 			
+			System.out.println("|--"+board.valueAt(3)+"---|---"+board.valueAt(4)+"---|--"+board.valueAt(5)+"--|");
+			
+			System.out.println("|------|-------|-----|");
+			
+			System.out.println("|--"+board.valueAt(0)+"---|---"+board.valueAt(1)+"---|--"+board.valueAt(2)+"--|");
+			
+			System.out.println("----------------------");
 		}
 		
 		System.out.println("Sieg von Spieler "+ winningPlayer);
