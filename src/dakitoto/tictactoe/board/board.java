@@ -7,10 +7,19 @@ public class board {
 	
 	public board(){
 		board= new int[9];
+		clearBoard();
 	}
 	
 	public void setValueAt(int player, int pos){
 		board[pos]=player;
+	}
+	
+	public boolean isFieldEmpty(int pos){
+		if(board[pos]==0){
+			return true;
+		}
+		return false;
+		
 	}
 	
 	public void clearBoard(){
@@ -18,6 +27,23 @@ public class board {
 			board[i]=0;
 		}
 	}
+	
+	public boolean isBoardEmpty(){
+		
+		if( board[0]==0 && 
+			board[1]==0 &&
+			board[2]==0 &&
+			board[3]==0 &&
+			board[4]==0 &&
+			board[5]==0 &&
+			board[6]==0 &&
+			board[7]==0 &&
+			board[8]==0 ){
+			return true;
+		}
+		return false;
+	}
+	
 	
 	public boolean checkPlayerWin(int player){ // 1= erster Spieler  2= 2. oder ComputerSpieler
 		
