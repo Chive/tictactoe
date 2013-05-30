@@ -10,6 +10,10 @@ public class board {
 		clearBoard();
 	}
 	
+	public int valueAt(int pos){
+		return board[pos];
+	}
+	
 	public void setValueAt(int player, int pos){
 		board[pos]=player;
 	}
