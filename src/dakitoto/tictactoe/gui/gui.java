@@ -17,7 +17,7 @@ import javax.swing.JMenuItem;
 
 public class gui {
 
-	private JFrame frame;
+	private JFrame frmTicTacToe;
 
 	/**
 	 * Launch the application.
@@ -27,7 +27,7 @@ public class gui {
 			public void run() {
 				try {
 					gui window = new gui();
-					window.frame.setVisible(true);
+					window.frmTicTacToe.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -46,37 +46,15 @@ public class gui {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(new BorderLayout(0, 0));
-		
-		JPanel panel_1 = new JPanel();
-		frame.getContentPane().add(panel_1, BorderLayout.NORTH);
-		panel_1.setLayout(new GridLayout(0, 1, 0, 0));
-		
-		JPanel panel = new JPanel();
-		FlowLayout flowLayout = (FlowLayout) panel.getLayout();
-		panel_1.add(panel);
-		
-		JLabel lblTicTacToe = new JLabel("Tic Tac Toe");
-		panel.add(lblTicTacToe);
-		
-		JPanel panel_2 = new JPanel();
-		FlowLayout flowLayout_1 = (FlowLayout) panel_2.getLayout();
-		panel_1.add(panel_2);
-		
-		JLabel lblNeuesSpiel = new JLabel("Neues Spiel");
-		panel_2.add(lblNeuesSpiel);
-		
-		JButton btnSpieler = new JButton("1 Spieler");
-		panel_2.add(btnSpieler);
-		
-		JButton btnSpieler_1 = new JButton("2 Spieler");
-		panel_2.add(btnSpieler_1);
+		frmTicTacToe = new JFrame();
+		frmTicTacToe.setTitle("Tic Tac Toe");
+		frmTicTacToe.setBounds(100, 100, 450, 300);
+		frmTicTacToe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmTicTacToe.getContentPane().setLayout(new BorderLayout(0, 0));
 		
 		JPanel panel_3 = new JPanel();
-		frame.getContentPane().add(panel_3, BorderLayout.CENTER);
+		frmTicTacToe.getContentPane().add(panel_3);
+		panel_3.setLayout(new BorderLayout(0, 0));
 		
 		JPanel panel_3_1 = new JPanel();
 		panel_3.add(panel_3_1);
@@ -114,7 +92,7 @@ public class gui {
 		panel_3_1.add(button_8);
 		
 		JMenuBar menuBar = new JMenuBar();
-		frame.setJMenuBar(menuBar);
+		frmTicTacToe.setJMenuBar(menuBar);
 		
 		JMenu mnSpiel = new JMenu("Spiel");
 		menuBar.add(mnSpiel);
