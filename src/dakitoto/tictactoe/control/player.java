@@ -14,7 +14,10 @@ public class player {
 	}
 	
 	public void playerSetValueAt(int position){
-		this.board.setValueAt(this.getPlayerAtTurn(), position);
+		if(board.isFieldEmpty(position)){
+			this.board.setValueAt(this.getPlayerAtTurn(), position);
+			switchPlayerAtTurn();
+		}
 	}
 
 

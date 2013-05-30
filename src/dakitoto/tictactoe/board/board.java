@@ -14,6 +14,14 @@ public class board {
 		board[pos]=player;
 	}
 	
+	public boolean isFieldEmpty(int pos){
+		if(board[pos]==0){
+			return true;
+		}
+		return false;
+		
+	}
+	
 	public void clearBoard(){
 		for(int i=0; i<9;i++){
 			board[i]=0;
