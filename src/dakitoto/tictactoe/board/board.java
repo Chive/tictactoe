@@ -7,6 +7,7 @@ public class board {
 	
 	public board(){
 		board= new int[9];
+		clearBoard();
 	}
 	
 	public void setValueAt(int player, int pos){
