@@ -45,7 +45,6 @@ public class gui {
 			public void run() {
 				try {
 					gui window = new gui();
-					window.frmTicTacToe.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -134,6 +133,8 @@ public class gui {
 		JMenuItem mntmBeenden = new JMenuItem("Beenden");
 		mntmBeenden.setAction(action_9);
 		mnSpiel.add(mntmBeenden);
+		
+		frmTicTacToe.setVisible(true);
 	}
 
 	private class SwingAction extends AbstractAction {
