@@ -11,6 +11,9 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.FlowLayout;
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
 
 public class gui {
 
@@ -98,6 +101,10 @@ public class gui {
 		panel_3_1.add(button_5);
 		
 		JButton button_6 = new JButton("7");
+		button_6.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		panel_3_1.add(button_6);
 		
 		JButton button_7 = new JButton("8");
@@ -105,6 +112,24 @@ public class gui {
 		
 		JButton button_8 = new JButton("9");
 		panel_3_1.add(button_8);
+		
+		JMenuBar menuBar = new JMenuBar();
+		frame.setJMenuBar(menuBar);
+		
+		JMenu mnSpiel = new JMenu("Spiel");
+		menuBar.add(mnSpiel);
+		
+		JMenu mnNeu = new JMenu("Neu");
+		mnSpiel.add(mnNeu);
+		
+		JMenuItem mntmSpieler = new JMenuItem("1 Spieler");
+		mnNeu.add(mntmSpieler);
+		
+		JMenuItem mntmSpieler_1 = new JMenuItem("2 Spieler");
+		mnNeu.add(mntmSpieler_1);
+		
+		JMenuItem mntmBeenden = new JMenuItem("Beenden");
+		mnSpiel.add(mntmBeenden);
 	}
 
 }
