@@ -9,14 +9,7 @@ import java.awt.event.WindowEvent;
 import javax.swing.*;
 
 public class gui extends JFrame {
-	
-	// test 2
-	
-	
-	
-	
-	
-	
+		
 	public gui(){
 		setTitle("My Empty Frame");
 		setSize(300,200); // default size is 0,0
