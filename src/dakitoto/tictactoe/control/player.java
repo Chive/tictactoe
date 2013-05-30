@@ -1,6 +1,6 @@
 package dakitoto.tictactoe.control;
 
-import dakitoto.tictactoe.board.board;;
+import dakitoto.tictactoe.board.board;
 
 public class player {
 	
