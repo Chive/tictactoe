@@ -1,3 +1,5 @@
+// created with window builder: http://download.eclipse.org/windowbuilder/WB/integration/4.2/
+
 package dakitoto.tictactoe.gui;
 
 import java.awt.EventQueue;
