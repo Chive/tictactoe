@@ -4,7 +4,7 @@ import dakitoto.tictactoe.board.board;
 
 public class player {
 	
-	private int playerAtTurn=0;
+	private int playerAtTurn=1;
 	private board board;
 	private boolean multiplayer;
 	
