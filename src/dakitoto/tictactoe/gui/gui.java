@@ -18,6 +18,8 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import javax.swing.AbstractAction;
 import javax.swing.Action;
+import java.awt.Panel;
+import javax.swing.ImageIcon;
 
 public class gui {
 
