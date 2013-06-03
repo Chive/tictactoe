@@ -24,15 +24,7 @@ public class AI {
 			return;
 		}
 		
-		if(     board.valueAt(0)==1^
-				board.valueAt(1)==1^
-				board.valueAt(2)==1^
-				board.valueAt(3)==1^
-				board.valueAt(4)==1^
-				board.valueAt(5)==1^
-				board.valueAt(6)==1^
-				board.valueAt(7)==1^
-				board.valueAt(8)==1){
+		if (this.oneFieldHuman()){
 			beginnHuman=true;
 		}
 		
@@ -152,7 +144,12 @@ public class AI {
 				return;
 			}
 		}
-				
+		
+		if((!beginnHuman) && board.valueAt(4)==1 && board.valueAt(2)==0){
+			player.playerSetValueAt(2);
+			return;
+		}
+		
 		if((board.valueAt(7)==0 && board.valueAt(8)==0)){
 			player.playerSetValueAt(8);
 			return;
@@ -242,6 +239,122 @@ public class AI {
 		
 		
 		return -1;
+	}
+	
+	
+	
+	
+	public boolean oneFieldHuman(){
+
+		if (       board.valueAt(0) == 1 
+				&& board.valueAt(1) == 0
+				&& board.valueAt(2) == 0
+				&& board.valueAt(3) == 0
+				&& board.valueAt(4) == 0
+				&& board.valueAt(5) == 0
+				&& board.valueAt(6) == 0
+				&& board.valueAt(7) == 0
+				&& board.valueAt(8) == 0) {
+			return true;
+		}
+		
+		if (       board.valueAt(0) == 0 
+				&& board.valueAt(1) == 1
+				&& board.valueAt(2) == 0
+				&& board.valueAt(3) == 0
+				&& board.valueAt(4) == 0
+				&& board.valueAt(5) == 0
+				&& board.valueAt(6) == 0
+				&& board.valueAt(7) == 0
+				&& board.valueAt(8) == 0) {
+			return true;
+		}
+		
+		if (       board.valueAt(0) == 0 
+				&& board.valueAt(1) == 0
+				&& board.valueAt(2) == 1
+				&& board.valueAt(3) == 0
+				&& board.valueAt(4) == 0
+				&& board.valueAt(5) == 0
+				&& board.valueAt(6) == 0
+				&& board.valueAt(7) == 0
+				&& board.valueAt(8) == 0) {
+			return true;
+		}
+		
+		if (       board.valueAt(0) == 0 
+				&& board.valueAt(1) == 0
+				&& board.valueAt(2) == 0
+				&& board.valueAt(3) == 1
+				&& board.valueAt(4) == 0
+				&& board.valueAt(5) == 0
+				&& board.valueAt(6) == 0
+				&& board.valueAt(7) == 0
+				&& board.valueAt(8) == 0) {
+			return true;
+		}
+		
+		if (       board.valueAt(0) == 0 
+				&& board.valueAt(1) == 0
+				&& board.valueAt(2) == 0
+				&& board.valueAt(3) == 0
+				&& board.valueAt(4) == 1
+				&& board.valueAt(5) == 0
+				&& board.valueAt(6) == 0
+				&& board.valueAt(7) == 0
+				&& board.valueAt(8) == 0) {
+			return true;
+		}
+		
+		if (       board.valueAt(0) == 0 
+				&& board.valueAt(1) == 0
+				&& board.valueAt(2) == 0
+				&& board.valueAt(3) == 0
+				&& board.valueAt(4) == 0
+				&& board.valueAt(5) == 1
+				&& board.valueAt(6) == 0
+				&& board.valueAt(7) == 0
+				&& board.valueAt(8) == 0) {
+			return true;
+		}
+		
+		if (       board.valueAt(0) == 0 
+				&& board.valueAt(1) == 0
+				&& board.valueAt(2) == 0
+				&& board.valueAt(3) == 0
+				&& board.valueAt(4) == 0
+				&& board.valueAt(5) == 0
+				&& board.valueAt(6) == 1
+				&& board.valueAt(7) == 0
+				&& board.valueAt(8) == 0) {
+			return true;
+		}
+		
+		if (       board.valueAt(0) == 0 
+				&& board.valueAt(1) == 0
+				&& board.valueAt(2) == 0
+				&& board.valueAt(3) == 0
+				&& board.valueAt(4) == 0
+				&& board.valueAt(5) == 0
+				&& board.valueAt(6) == 0
+				&& board.valueAt(7) == 1
+				&& board.valueAt(8) == 0) {
+			return true;
+		}
+		
+		if (       board.valueAt(0) == 0 
+				&& board.valueAt(1) == 0
+				&& board.valueAt(2) == 0
+				&& board.valueAt(3) == 0
+				&& board.valueAt(4) == 0
+				&& board.valueAt(5) == 0
+				&& board.valueAt(6) == 0
+				&& board.valueAt(7) == 0
+				&& board.valueAt(8) == 1) {
+			return true;
+		}
+
+		return false;
 	}
 	
 }
