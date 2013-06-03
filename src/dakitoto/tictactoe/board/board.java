@@ -49,6 +49,13 @@ public class board {
 	}
 	
 	
+	public boolean isBoardFull(){
+		for(int i=0; i<9;i++){
+			if(board[i]==0){return false;}
+		}
+		return true;
+	}
+	
 	public boolean checkPlayerWin(int player){ // 1= erster Spieler  2= 2. oder ComputerSpieler
 		
 		if(board[6]==player && board[7]==player && board[8]==player){return true;}

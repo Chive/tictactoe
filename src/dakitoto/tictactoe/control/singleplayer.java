@@ -7,7 +7,6 @@ public class singleplayer extends player{
 	
 	public singleplayer(dakitoto.tictactoe.board.board board) {
 		super(board, true); //true for multiplayerstatus
-		ai = new AI(board, this);
 	}
 	
 	
