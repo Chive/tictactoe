@@ -27,7 +27,7 @@ public class player {
 				switchPlayerAtTurn();
 			}
 		}else{
-			System.out.println("game not finisheds");
+			//System.out.println("game not finisheds");
 		}
 	}
 

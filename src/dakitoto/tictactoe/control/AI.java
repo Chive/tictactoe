@@ -14,7 +14,7 @@ public class AI {
 	private boolean beginnHuman;
 	
 	public void nextTurn(){
-		System.out.println("AI zug");
+		//System.out.println("AI zug");
 		
 		
 		//////////////////////////////////////////// First Move
@@ -29,7 +29,7 @@ public class AI {
 		}
 		
 		
-		System.out.println("Spieler beginn "+ beginnHuman);
+		//System.out.println("Spieler beginn "+ beginnHuman);
 		//////////////////////////////////////////// Possible Win check
 		int i=0;
 		if((i=possibleWin(6,7,8))!=-1){

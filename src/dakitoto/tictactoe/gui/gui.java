@@ -181,7 +181,7 @@ public class gui extends JFrame{
 	
 	public void Update(){
 	
-		System.out.println("Update-----------------------------------------");
+		
 	
 		if(player.getBoard().valueAt(0)!=0){
 			if(player.getBoard().valueAt(0)==1){
@@ -192,7 +192,7 @@ public class gui extends JFrame{
 			//	button_0.setIcon(icon);
 			//	button_0.setFocusPainted( false );
 				
-			//	System.out.println("Button image: "+button_0.getIcon());
+			//	//system.out.println("Button image: "+button_0.getIcon());
 			}else{
 				button_0.setText("O");
 			}
@@ -285,70 +285,70 @@ public class gui extends JFrame{
 	
 	public class SwingAction_6 implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			System.out.println("button 6 clicked");
+			//system.out.println("button 6 clicked");
 			player.playerSetValueAt(6);
 			//Update();
 		}
 	}
 	public class SwingAction_7 implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			System.out.println("button 7 clicked");
+			//system.out.println("button 7 clicked");
 			player.playerSetValueAt(7);
 			//Update();
 		}
 	}
 	public class SwingAction_8 implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			System.out.println("button 8 clicked");
+			//system.out.println("button 8 clicked");
 			player.playerSetValueAt(8);
 			//Update();
 		}
 	}
 	public class SwingAction_3 implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			System.out.println("button 3 clicked");
+			//system.out.println("button 3 clicked");
 			player.playerSetValueAt(3);
 			//Update();
 		}
 	}
 	public class SwingAction_4 implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			System.out.println("button 4 clicked");
+			//system.out.println("button 4 clicked");
 			player.playerSetValueAt(4);
 			//Update();
 		}
 	}
 	public class SwingAction_5 implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			System.out.println("button 5 clicked");
+			//system.out.println("button 5 clicked");
 			player.playerSetValueAt(5);
 			//Update();
 		}
 	}
 	public class SwingAction_0 implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			System.out.println("button 0 clicked");
+			//system.out.println("button 0 clicked");
 			player.playerSetValueAt(0);
 			//Update();
 		}
 	}
 	public class SwingAction_1 implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			System.out.println("button 1 clicked");
+			//system.out.println("button 1 clicked");
 			player.playerSetValueAt(1);
 			//Update();
 		}
 	}
 	public class SwingAction_2 implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			System.out.println("button 2 clicked");
+			//system.out.println("button 2 clicked");
 			player.playerSetValueAt(2);
 			//Update();
 		}
 	}
 	public class SwingAction_Quit implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
-			System.exit(0);
+			//system.exit(0);
 		}
 	}
 	public class SwingAction_OnePlayer implements ActionListener {
