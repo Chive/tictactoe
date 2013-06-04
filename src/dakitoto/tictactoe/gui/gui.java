@@ -150,6 +150,9 @@ public class gui extends JFrame{
 		JMenu mnSpiel = new JMenu("Spiel");
 		menuBar.add(mnSpiel);
 		
+		JMenu aboutmn = new JMenu("?");
+		menuBar.add(aboutmn);
+		
 		JMenu mnNeu = new JMenu("Neu");
 		mnSpiel.add(mnNeu);
 		
@@ -160,6 +163,10 @@ public class gui extends JFrame{
 		JMenuItem mntmSpieler_1 = new JMenuItem("2 Spieler");
 		mntmSpieler_1.addActionListener(new SwingAction_TwoPlayer());
 		mnNeu.add(mntmSpieler_1);
+		
+		JMenuItem hilfemenu = new JMenuItem("Hilfe");
+		aboutmn.add(hilfemenu);
+		hilfemenu.addActionListener(new SwingAction_Help());
 		
 		JMenuItem mntmBeenden = new JMenuItem("Beenden");
 		mntmBeenden.addActionListener(new SwingAction_Quit());
@@ -369,6 +376,15 @@ public class gui extends JFrame{
 			player.setMultiplayer(true);
 			player.setGameFinisched(false);
 			
+		}
+	}
+	public class SwingAction_Help implements ActionListener {
+		public void actionPerformed(ActionEvent e) {
+			showWinWindow("TicTacToe ist ein kleines Spiel zum Zeitvertreib. Man spielt es auf einem 3*3 Spielfeld.\n " +
+					"Die zwei Spieler setzten nacheinander jeweils ein Zeichen auf eines der Felder. \n Auf einem Feld kann nur " +
+					"ein Zeichen sein. Wer zuerst drei Zeichen in einer Reihe gesetzt hat gewinnt das Spiel. \n Wenn das Spielfeld voll ist " +
+					"und keiner der" +
+					" Spieler drei seiner Zeichen in einer Reihe hat so endet das Spiel unentschieden. ");
 		}
 	}
 }
