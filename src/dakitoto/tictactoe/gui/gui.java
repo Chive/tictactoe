@@ -185,14 +185,7 @@ public class gui extends JFrame{
 	
 		if(player.getBoard().valueAt(0)!=0){
 			if(player.getBoard().valueAt(0)==1){
-				
 				button_0.setText("X");
-				
-			//	Icon icon=new ImageIcon("X.gif");
-			//	button_0.setIcon(icon);
-			//	button_0.setFocusPainted( false );
-				
-			//	//system.out.println("Button image: "+button_0.getIcon());
 			}else{
 				button_0.setText("O");
 			}
