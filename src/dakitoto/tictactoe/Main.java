@@ -30,11 +30,14 @@ public class Main {
 				if(winningPlayer!=3){
 					if(winningPlayer==2 && !player.isMultiplayer()){
 						System.out.println("Sieg von Computer-Spieler");
+						gui.showWinWindow("Sie haben verloren");
 					}else{
 						System.out.println("Sieg von Spieler "+ winningPlayer);
+						gui.showWinWindow("Sieg von Spieler "+ winningPlayer);
 					}
 				}else{
 					System.out.println("Unentschieden");
+					gui.showWinWindow("Unentschieden");
 				}
 				player.setGameFinisched(true);
 			}
