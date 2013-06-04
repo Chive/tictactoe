@@ -87,7 +87,7 @@ public class gui extends JFrame{
 	private void initialize() {
 		//frmTicTacToe = new JFrame();
 		setTitle("Tic Tac Toe");
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 250, 300);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().setLayout(new BorderLayout(0, 0));
 		
