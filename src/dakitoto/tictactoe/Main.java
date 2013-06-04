@@ -17,7 +17,7 @@ public class Main {
 		board= new board();
 		player= new player(board,false);
 		
-		gui= new gui(player, this);
+		gui= new gui(player);
 		
 		
 		int winningPlayer=0;
