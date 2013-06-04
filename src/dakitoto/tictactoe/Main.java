@@ -36,8 +36,8 @@ public class Main {
 						gui.showWinWindow("Sieg von Spieler "+ winningPlayer);
 					}
 				}else{
-					System.out.println("Unentschieden");
-					gui.showWinWindow("Unentschieden");
+					System.out.println("Unentschieden ");
+					gui.showWinWindow("Unentschieden ");
 				}
 				player.setGameFinisched(true);
 			}
