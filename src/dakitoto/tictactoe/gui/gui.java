@@ -13,6 +13,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import dakitoto.tictactoe.control.player;
+import java.awt.Font;
 
 public class gui extends JFrame{
 
@@ -97,38 +98,47 @@ public class gui extends JFrame{
 		panel_3_1.setLayout(new GridLayout(3, 0, 0, 0));
 		
 		button_6 = new JButton("6");
+		button_6.setFont(new Font("Tahoma", Font.BOLD, 22));
 		button_6.addActionListener(new SwingAction_6());
 		panel_3_1.add(button_6);
 		
 		button_7 = new JButton("7");
+		button_7.setFont(new Font("Tahoma", Font.BOLD, 22));
 		button_7.addActionListener(new SwingAction_7());
 		panel_3_1.add(button_7);
 		
 		button_8 = new JButton("8");
+		button_8.setFont(new Font("Tahoma", Font.BOLD, 22));
 		button_8.addActionListener(new SwingAction_8());
 		panel_3_1.add(button_8);
 		
 		button_3 = new JButton("3");
+		button_3.setFont(new Font("Tahoma", Font.BOLD, 22));
 		button_3.addActionListener(new SwingAction_3());
 		panel_3_1.add(button_3);
 		
 		button_4 = new JButton("4");
+		button_4.setFont(new Font("Tahoma", Font.BOLD, 22));
 		button_4.addActionListener(new SwingAction_4());
 		panel_3_1.add(button_4);
 		
 		button_5 = new JButton("5");
+		button_5.setFont(new Font("Tahoma", Font.BOLD, 22));
 		button_5.addActionListener(new SwingAction_5());
 		panel_3_1.add(button_5);
 		
 		button_0 = new JButton("0");
+		button_0.setFont(new Font("Tahoma", Font.BOLD, 22));
 		button_0.addActionListener(new SwingAction_0());
 		panel_3_1.add(button_0);
 		
 		button_1 = new JButton("1");
+		button_1.setFont(new Font("Tahoma", Font.BOLD, 22));
 		button_1.addActionListener(new SwingAction_1());
 		panel_3_1.add(button_1);
 		
 		button_2 = new JButton("2");
+		button_2.setFont(new Font("Tahoma", Font.BOLD, 22));
 		button_2.addActionListener(new SwingAction_2());
 		panel_3_1.add(button_2);
 		
